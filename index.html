@@ -13,35 +13,45 @@
             theme: {
                 extend: {
                     colors: {
-                        apple: {
-                            blue: '#0071e3',
-                            gray: '#f5f5f7',
-                            darkgray: '#86868b',
-                            black: '#1d1d1f'
+                        blueprince: {
+                            darkblue: '#0a1835',
+                            blue: '#112a54',
+                            lightblue: '#1e3c6e',
+                            accent: '#2c5495',
+                            text: '#e0e6f0'
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        .bg-pattern {
+            background-color: #0a1835;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cGF0aCBkPSJNMjggNjYgTCAyOCAxMDAgTCAwIDEwMCBDIDAgODAgMCA3MC4xIDAgNTAuMSBDOCA0MCAyMCAzOCAyOCAzMS45IiBmaWxsPSIjMTEyYTU0Ij48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwIEwgMjggMzMgQyAyMCAzOS44IDggNDEuOSAwIDUwIEMgMCAzMCAwIDIwIDAgMCIgZmlsbD0iIzExMmE1NCI+PC9wYXRoPgo8cGF0aCBkPSJNMjggMCBMIDI4IDMzIEMgMzYgMzkuOCA0OCA0MS45IDU2IDUwIEMgNTYgMzAgNTYgMjAgNTYgMCIgZmlsbD0iIzBlMjI0NCI+PC9wYXRoPgo8cGF0aCBkPSJNMjggNjYgTCAyOCAxMDAgTCA1NiAxMDAgQyA1NiA4MCA1NiA3MC4xIDU2IDUwLjEgQzQ4IDQwIDM2IDM4IDI4IDMxLjkiIGZpbGw9IiMwZTIyNDQiPjwvcGF0aD4KPC9zdmc+');
+        }
+        body {
+            background-color: #0a1835;
+        }
+    </style>
 </head>
-<body class="bg-apple-gray text-apple-black font-sans">
+<body class="text-blueprince-text font-sans">
     <!-- Hero Section -->
-    <header class="relative">
-        <div class="absolute inset-0 z-0 bg-gradient-to-b from-apple-blue/20 to-white/5"></div>
-        <div class="container mx-auto px-4 py-12 md:py-24 relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold text-center mb-6">Blue Prince</h1>
-            <p class="text-xl md:text-2xl text-center text-apple-darkgray max-w-3xl mx-auto">
+    <header class="relative bg-pattern">
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-blueprince-accent/10 to-blueprince-darkblue/95"></div>
+        <div class="container mx-auto px-4 py-16 md:py-28 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-6 text-white">Blue Prince</h1>
+            <p class="text-xl md:text-2xl text-center text-blueprince-text/90 max-w-3xl mx-auto">
                 Where adventure and mystery collide in an immersive world of wonder.
             </p>
         </div>
     </header>
 
     <!-- Game Trailer Section -->
-    <section class="py-12 md:py-20 bg-black">
+    <section class="py-12 md:py-20 bg-blueprince-darkblue">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Experience the Adventure</h2>
-            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-blueprince-accent/30">
                 <video controls class="w-full h-auto">
                     <source src="video/WeChat_20250413184522.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -51,28 +61,28 @@
     </section>
 
     <!-- Game Features -->
-    <section class="py-16 md:py-24">
+    <section class="py-16 md:py-24 bg-blueprince-blue">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Game Features</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Game Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <h2 class="text-2xl font-bold mb-4 text-apple-blue">Immersive Storyline</h2>
-                    <p class="text-apple-darkgray">Dive into a captivating narrative that unfolds as you progress through the world of Blue Prince.</p>
+                <div class="bg-blueprince-darkblue p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-blueprince-accent/20">
+                    <h2 class="text-2xl font-bold mb-4 text-white">Immersive Storyline</h2>
+                    <p class="text-blueprince-text/80">Dive into a captivating narrative that unfolds as you progress through the world of Blue Prince.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <h2 class="text-2xl font-bold mb-4 text-apple-blue">Stunning Visuals</h2>
-                    <p class="text-apple-darkgray">Experience breathtaking landscapes and meticulously designed environments that bring the game world to life.</p>
+                <div class="bg-blueprince-darkblue p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-blueprince-accent/20">
+                    <h2 class="text-2xl font-bold mb-4 text-white">Stunning Visuals</h2>
+                    <p class="text-blueprince-text/80">Experience breathtaking landscapes and meticulously designed environments that bring the game world to life.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <h2 class="text-2xl font-bold mb-4 text-apple-blue">Strategic Gameplay</h2>
-                    <p class="text-apple-darkgray">Test your skills with challenging puzzles and dynamic combat systems designed to engage players of all levels.</p>
+                <div class="bg-blueprince-darkblue p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-blueprince-accent/20">
+                    <h2 class="text-2xl font-bold mb-4 text-white">Strategic Gameplay</h2>
+                    <p class="text-blueprince-text/80">Test your skills with challenging puzzles and dynamic combat systems designed to engage players of all levels.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Game World Section -->
-    <section class="py-16 md:py-24 bg-apple-blue text-white">
+    <section class="py-16 md:py-24 bg-blueprince-lightblue text-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Enter the World of Blue Prince</h2>
             <div class="max-w-3xl mx-auto">
@@ -90,27 +100,27 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 md:py-20">
+    <section class="py-16 md:py-20 bg-pattern">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Begin Your Journey?</h2>
-            <a href="#" class="inline-block bg-apple-blue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">Ready to Begin Your Journey?</h2>
+            <a href="#" class="inline-block bg-blueprince-accent hover:bg-blueprince-lightblue text-white font-bold py-3 px-8 rounded-full text-lg transition-colors border border-blueprince-text/20">
                 Get Blue Prince Now
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-apple-black text-white py-12">
+    <footer class="bg-blueprince-darkblue text-white py-12 border-t border-blueprince-accent/20">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <h2 class="text-2xl font-bold">Blue Prince</h2>
-                    <p class="text-apple-darkgray mt-2">© 2023 Blue Prince. All rights reserved.</p>
+                    <p class="text-blueprince-text/70 mt-2">© 2023 Blue Prince. All rights reserved.</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-apple-darkgray hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-apple-darkgray hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" class="text-apple-darkgray hover:text-white transition-colors">Contact</a>
+                    <a href="#" class="text-blueprince-text/70 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-blueprince-text/70 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-blueprince-text/70 hover:text-white transition-colors">Contact</a>
                 </div>
             </div>
         </div>
